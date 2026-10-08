@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<title>Tienda Tecnológica</title>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "yub4bkrtrm");
+    </script>
+
+    <style>
+        /* Reset y estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #0f172a;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #94a3b8;
+        }
+
+        /* Contenedor principal */
+        main {
+            max-width: 500px;
+            width: 90%;
+            margin: 30px auto;
+            flex: 1;
+        }
+
+        /* Tarjeta contenedora */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        .card p {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        /* Grupo de botones */
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Botón base */
+        .btn {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        /* Botón Comprar */
+        .btn-buy {
+            background-color: #16a34a;
+        }
+
+        .btn-buy:hover {
+            background-color: #15803d;
+        }
+
+        /* Botón Ofertas */
+        .btn-offer {
+            background-color: #eab308;
+            color: #0f172a;
+        }
+
+        .btn-offer:hover {
+            background-color: #ca8a04;
+            color: white;
+        }
+
+        /* Botón Contacto */
+        .btn-contact {
+            background-color: #64748b;
+        }
+
+        .btn-contact:hover {
+            background-color: #475569;
+        }
+
+        /* Pie de página */
+        footer {
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #64748b;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Tienda Tecnológica</h1>
+        <p>Encuentra el equipo ideal para tus necesidades</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="card">
+
+            <h2>¿Qué estás buscando hoy?</h2>
+
+            <p>
+                Haz clic en cualquiera de las opciones para explorar nuestro catálogo:
+            </p>
+
+            <div class="button-group">
+
+                <button
+                    class="btn btn-buy"
+                    onclick="accion('Comprar laptop')">
+                    Comprar laptop
+                </button>
+
+                <button
+                    class="btn"
+                    onclick="accion('Ver computadoras')">
+                    Ver computadoras
+                </button>
+
+                <button
+                    class="btn"
+                    onclick="accion('Ver accesorios')">
+                    Ver accesorios
+                </button>
+
+                <button
+                    class="btn btn-offer"
+                    onclick="accion('Ofertas')">
+                    Ofertas
+                </button>
+
+                <button
+                    class="btn btn-contact"
+                    onclick="accion('Contacto')">
+                    Contacto
+                </button>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 - Mi Tienda Web de Prueba</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function accion(nombreBoton) {
+            alert("Has hecho clic en: " + nombreBoton);
+        }
+    </script>
+
+</body>
+</html>
